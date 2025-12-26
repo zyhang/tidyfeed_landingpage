@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 function Footer() {
     return (
         <footer
@@ -17,13 +19,13 @@ function Footer() {
 
                 {/* Links */}
                 <div className="flex items-center gap-6">
-                    <a
-                        href="#"
+                    <Link
+                        to="/privacy"
                         className="text-sm transition-colors duration-200 hover:text-indigo-400"
                         style={{ color: 'var(--color-text-secondary)' }}
                     >
                         Privacy Policy
-                    </a>
+                    </Link>
                     <a
                         href="https://x.com/tidyfeed"
                         target="_blank"
